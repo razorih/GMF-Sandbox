@@ -8,7 +8,7 @@ OnLoadIntroTime = 0;        // We don't want to see the time and date on the int
 OnLoadMissionTime = 0;      // Nor on the mission load
 loadScreen = "america.paa"; // Image displayed on mission load
 
-ShowGPS = 1;     // Allow players to use GPS,
+showGPS = 1;     // Allow players to use GPS,
 showCompass = 1; // Compass,
 showMap = 1;     // Map,
 showWatch = 1;   // And watch.
