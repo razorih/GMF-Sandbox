@@ -1,0 +1,55 @@
+Respawn = 3;
+RespawnDelay = 15;
+
+author = "razorih";
+onLoadName = "GMF FuckShitUp";
+OnLoadMission = "America is dominate. I'm crying tears.";
+OnLoadIntroTime = True;
+OnLoadMissionTime = True;
+loadScreen = "america.paa";
+
+ShowGPS = 1;
+showCompass = 1;
+showMap = 1;
+showWatch = 1;
+
+class Header
+{
+    gameType = Coop;
+    minPlayers = 1;
+    maxPlayers = 14;
+};
+
+#include "VAS\menu.hpp" // Include Virtual Ammobox menu
+
+class CfgFunctions
+{
+    #include "VAS\cfgfunctions.hpp" // Include Virtual Ammobox System headers.
+};
+
+class Params
+{
+    class TimeOfDay // ParamsArray[2]
+    {
+        title = "Kellonaika:";
+        values[] = {-6, 0, 7, 12, 2}; // Time offset = 12 hours. Add or substract from it. Note 24 hour time system
+        texts[] = {"Aamu", "Keskipäivä", "Ilta", "Keskiyö", "Lapin yö"};
+        default = 0;
+    };
+    
+    class Weather // ParamsArray[3]
+    {
+        title = "Sää: (SimulWeather synccaa 10min kuluttua)";
+        values[] = {0, 0.25, 0.50, 0.75, 1}; // Weather effects are define from 0 to 1, where 0 is clear and 1 is horrible
+        texts[] = {"Poutaa", "Tuulista", "Sateista", "Uhkaavaa", "Esterin perse"};
+        default = 0;
+    };
+
+    class Gaybows // ParamsArray[4]
+    {
+        title = "Sateenkaaria?";
+        values[] = {0, 1, 10}; // Rainbow level can be applied over 1 to make it more intensive.
+        texts[] = {"Nope, pärjätään ilmankin", "Voishan siel sellanen olla", "Holy shit toi polttaa silmiä"};
+        default = 0;
+    };
+};
