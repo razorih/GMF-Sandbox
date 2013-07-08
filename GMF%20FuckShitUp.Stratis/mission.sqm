@@ -936,7 +936,7 @@ class Mission
 			vehicle="Land_CinderBlocks_F";
 			skill=0.60000002;
 			text="teleport_spawn";
-			init="nul=[this,[teleport_airport,teleport_harbor,teleport_firingrange,teleport_vehiclerange,teleport_vehiclerange_new]] execVM ""loadaction.sqf""";
+			init="nul=[this,[teleport_airport,teleport_harbor,teleport_firingrange,teleport_vehiclerange,teleport_vehiclerange_new]] execVM ""loadteleport.sqf""";
 		};
 		class Item1
 		{
@@ -968,7 +968,7 @@ class Mission
 			vehicle="Land_CinderBlocks_F";
 			skill=0.60000002;
 			text="teleport_airport";
-			init="nul=[this,[teleport_spawn,teleport_harbor,teleport_firingrange,teleport_vehiclerange,teleport_vehiclerange_new]] execVM ""loadaction.sqf""";
+			init="nul=[this,[teleport_spawn,teleport_harbor,teleport_firingrange,teleport_vehiclerange,teleport_vehiclerange_new]] execVM ""loadteleport.sqf""";
 		};
 		class Item4
 		{
@@ -1022,7 +1022,7 @@ class Mission
 			vehicle="Land_CinderBlocks_F";
 			skill=0.60000002;
 			text="teleport_harbor";
-			init="nul=[this,[teleport_spawn,teleport_airport,teleport_firingrange,teleport_vehiclerange,teleport_vehiclerange_new]] execVM ""loadaction.sqf""";
+			init="nul=[this,[teleport_spawn,teleport_airport,teleport_firingrange,teleport_vehiclerange,teleport_vehiclerange_new]] execVM ""loadteleport.sqf""";
 		};
 		class Item9
 		{
@@ -1033,7 +1033,7 @@ class Mission
 			vehicle="Land_CinderBlocks_F";
 			skill=0.60000002;
 			text="teleport_firingrange";
-			init="nul=[this,[teleport_spawn,teleport_airport,teleport_harbor,teleport_vehiclerange,teleport_vehiclerange_new]] execVM ""loadaction.sqf""";
+			init="nul=[this,[teleport_spawn,teleport_airport,teleport_harbor,teleport_vehiclerange,teleport_vehiclerange_new]] execVM ""loadteleport.sqf""";
 		};
 		class Item10
 		{
@@ -1090,7 +1090,7 @@ class Mission
 			vehicle="Land_CinderBlocks_F";
 			skill=0.60000002;
 			text="teleport_vehiclerange";
-			init="nul=[this,[teleport_spawn,teleport_airport,teleport_harbor,teleport_firingrange,teleport_vehiclerange_new]] execVM ""loadaction.sqf""";
+			init="nul=[this,[teleport_spawn,teleport_airport,teleport_harbor,teleport_firingrange,teleport_vehiclerange_new]] execVM ""loadteleport.sqf""";
 		};
 		class Item15
 		{
@@ -2828,7 +2828,7 @@ class Mission
 			vehicle="Land_CinderBlocks_F";
 			skill=0.60000002;
 			text="teleport_vehiclerange_new";
-			init="nul=[this,[teleport_spawn,teleport_airport,teleport_harbor,teleport_firingrange,teleport_vehiclerange]] execVM ""loadaction.sqf""";
+			init="nul=[this,[teleport_spawn,teleport_airport,teleport_harbor,teleport_firingrange,teleport_vehiclerange]] execVM ""loadteleport.sqf""";
 		};
 		class Item198
 		{
