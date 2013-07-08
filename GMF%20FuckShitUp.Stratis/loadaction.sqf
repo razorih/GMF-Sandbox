@@ -6,8 +6,9 @@
  * 
  * This file handles adding multiple actions to a single unit.
  */
-_unit = _this select 0; // unit teleporting
-_port = _this select 1; // game logic or unit name
+
+_unit = _this select 0; // unit teleporting.
+_port = _this select 1; // game logic or unit name.
 
 // Loop through the available teleport locations and add actions.
 for [{_i=0},{_i < count _port},{_i = _i+1}] do 

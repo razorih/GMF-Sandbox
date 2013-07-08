@@ -1,6 +1,10 @@
 /**
- * Init.sqf, initialized on mission start
+ * Init.sqf, executed on mission start
  * This file handles multiplayer parameters and removing player AI communications
+ */
+
+/**
+ * paramsArray is not present in singleplayer so quit when previewing.
  */
 if(!isMultiplayer) exitWith{};
 
@@ -11,14 +15,14 @@ if(!isMultiplayer) exitWith{};
  * NOTE: Weather effects need to be applied on EVERY client.
  */
 
-skipTime (paramsArray select 0); // First of all we skip time. It's possible to skip backwards, so default mission time is 12 hours
+skipTime (paramsArray select 0); // First of all we skip time. It's possible to skip backwards, so default mission time is 12 hours.
 
 /**
  * Weather effects
  * According to some comments on the wiki, only one weather effect can be applied at once.
  * As arma is quite awkward sometimes, we sleep for 1 second just to be sure.
  *
- * NOTE: Do not loop these, since loops are executed in one tick, this prevents multiple weather effects being applied
+ * NOTE: Do not loop these, since loops are executed in one tick, this prevents multiple weather effects being applied.
  */
 _weather = (paramsArray select 1);
 
@@ -34,7 +38,8 @@ sleep 1;                  // Sleep
  * Player AI Communications
  **
  * Firstly we wait for the player(s) to spawn.
- * After that we use "enableSentences" to not enable them
+ * After that we use "enableSentences" to make them silent.
+ * For instance, this prevents "Grid xxxxxxxx" radio chatter which can be quite irritating.
  */
 waitUntil {!isNull player};
 enableSentences false;
