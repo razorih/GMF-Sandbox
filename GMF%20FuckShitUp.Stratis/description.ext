@@ -32,28 +32,12 @@ class Params
     class TimeOfDay // ParamsArray[0]
     {
         title = "Kellonaika:";
-        values[] = {-6, 0, 7, 12, 2}; // Time offset = 12 hours. Add or substract from it. Note 24 hour time system
+        values[] = {-6, 0, 7, 12, 14}; // Time offset = 12 hours. Add or substract from it. Note 24 hour time system
         texts[] = {"Aamu", "Keskipäivä", "Ilta", "Keskiyö", "Lapin yö"};
         default = 0;
     };
-    
-    class Weather // ParamsArray[1]
-    {
-        title = "Sää: (SimulWeather synccaa 10min kuluttua)";
-        values[] = {0, 0.25, 0.50, 0.75, 1}; // Weather effects are define from 0 to 1, where 0 is clear and 1 is horrible
-        texts[] = {"Poutaa", "Tuulista", "Sateista", "Uhkaavaa", "Esterin perse"};
-        default = 0;
-    };
 
-    class Gaybows // ParamsArray[2]
-    {
-        title = "Sateenkaaria?";
-        values[] = {0, 1, 10}; // Rainbow level can be applied over 1 to make it more intensive.
-        texts[] = {"Nope, pärjätään ilmankin", "Voishan siel sellanen olla", "Holy shit toi polttaa silmiä"};
-        default = 0;
-    };
-
-    class Fog // ParamsArray[3]
+    class Fog // ParamsArray[1]
     {
         title = "Sumu";
         values[] = {0, 0.25, 0.50, 0.75, 1};
