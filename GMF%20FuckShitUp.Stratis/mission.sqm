@@ -70,6 +70,8 @@ class Mission
 		"A3_Structures_F_Training",
 		"A3_Structures_F_Mil_Helipads",
 		"A3_Air_F_Beta_Heli_Transport_02",
+		"A3_Weapons_F_Ammoboxes",
+		"a3_weapons_f_beta_ammoboxes",
 		"a3_map_stratis"
 	};
 	randomSeed=16354560;
@@ -926,7 +928,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=215;
+		items=217;
 		class Item0
 		{
 			position[]={2083.8325,5.87854,5725.3818};
@@ -2990,10 +2992,28 @@ class Mission
 			skill=0.60000002;
 			init="veh = [this,30,600] execVM ""vehicle.sqf""";
 		};
+		class Item215
+		{
+			position[]={2115.6711,6.2932305,5650.3789};
+			azimut=10;
+			id=251;
+			side="EMPTY";
+			vehicle="Box_East_AmmoVeh_F";
+			skill=0.60000002;
+		};
+		class Item216
+		{
+			position[]={2117.7329,6.2992797,5650.021};
+			azimut=10;
+			id=252;
+			side="EMPTY";
+			vehicle="Box_IND_AmmoVeh_F";
+			skill=0.60000002;
+		};
 	};
 	class Markers
 	{
-		items=8;
+		items=9;
 		class Item0
 		{
 			position[]={2083.8049,5.8772402,5725.4307};
@@ -3053,6 +3073,14 @@ class Mission
 			position[]={2239.2976,5.9736772,5681.8267};
 			name="marker_vehiclerange_new";
 			text="Maa-ajoneuvot";
+			type="mil_dot";
+			colorName="ColorBLUFOR";
+		};
+		class Item8
+		{
+			position[]={2116.5515,6.2957954,5650.2334};
+			name="marker_vehicle_ammo";
+			text="Ajoneuvoammukset";
 			type="mil_dot";
 			colorName="ColorBLUFOR";
 		};
