@@ -9,7 +9,7 @@
 class VAS_Diag {
 	idd = 2500;
 	name= "Virtual_Ammobox_Sys";
-	movingEnable = false;
+	movingEnable = true;
 	enableSimulation = true;
 	onLoad = "['guns',false] spawn VAS_fnc_mainDisplay";
 	

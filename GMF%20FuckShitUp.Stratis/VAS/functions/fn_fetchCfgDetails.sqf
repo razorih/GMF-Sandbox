@@ -1,6 +1,6 @@
 /*
 	@version: 1.3
-	@file_name: fetch_config_details.sqf
+	@file_name: fn_fetchCfgDetails.sqf
 	@file_author: TAW_Tonic
 	@file_edit: 6/22/2013
 	@file_description: Fetch information about the entities config

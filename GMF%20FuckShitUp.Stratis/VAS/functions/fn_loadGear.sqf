@@ -1,9 +1,9 @@
 #include "macro.sqf"
 /*
-	@version: 1.2
+	@version: 1.4
 	@file_name: fn_loadGear.sqf
 	@file_author: TAW_Tonic
-	@file_edit: 6/5/2013
+	@file_edit: 7/9/2013
 	@file_description: Load saved gear in old VAS format.
 */
 private["_slot","_loadout","_primary","_launcher","_handgun","_magazines","_uniform","_vest","_backpack","_items","_primitems","_secitems","_handgunitems","_uitems","_vitems","_bitems","_handle"];
@@ -62,7 +62,7 @@ if(_primary != "") then {[_primary,true,nil,nil,nil] spawn VAS_fnc_handleItem;};
 if(_launcher != "") then {[_launcher,true,nil,nil,nil] spawn VAS_fnc_handleItem;};
 if(_handgun != "") then {[_handgun,true,nil,nil,nil] spawn VAS_fnc_handleItem;};
 
-{[_x,true,nil,nil,nil] call VAS_fnc_handleItem;} foreach _items;
+{_handle = [_x,true,nil,nil,nil] spawn VAS_fnc_handleItem; waitUntil {scriptDone _handle};} foreach _items;
 {[_x,true,nil,nil,true] call VAS_fnc_handleItem;} foreach (_uitems);
 {[_x,true,nil,nil,true] call VAS_fnc_handleItem;} foreach (_vitems);
 {[_x,true,true,nil,nil] call VAS_fnc_handleItem;} foreach (_bitems);

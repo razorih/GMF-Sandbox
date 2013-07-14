@@ -17,6 +17,8 @@ _isgun = false;
 _details = [_item] call VAS_fnc_fetchCfgDetails;
 if(count _details == 0) exitWith {};
 
+if((_item in VAS_r_weapons) OR (_item in VAS_r_backpacks) OR (_item in VAS_r_magazines) OR (_item in VAS_r_items) OR (_item in VAS_r_glasses)) exitWith {systemChat format["%1 is a restricted item and will be not added.",(_details select 1)];};
+
 if(_bool) then
 {
 	switch((_details select 6)) do
