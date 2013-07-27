@@ -50,9 +50,9 @@ removeHeadGear player;
 } foreach (assignedItems player);
 
 //Add the gear
-if(_uniform != "") then {[_uniform,true,nil,nil,nil] spawn VAS_fnc_handleItem;};
-if(_vest != "") then {[_vest,true,nil,nil,nil] spawn VAS_fnc_handleItem;};
-if(_backpack != "") then {[_backpack,true,nil,nil,nil] spawn VAS_fnc_handleItem;};
+if(_uniform != "") then {_handle = [_uniform,true,nil,nil,nil] spawn VAS_fnc_handleItem; waitUntil {scriptDone _handle};};
+if(_vest != "") then {_handle = [_vest,true,nil,nil,nil] spawn VAS_fnc_handleItem; waitUntil {scriptDone _handle};};
+if(_backpack != "") then {_handle = [_backpack,true,nil,nil,nil] spawn VAS_fnc_handleItem; waitUntil {scriptDone _handle};};
 {
 	_handle = [_x,true,nil,nil,nil] spawn VAS_fnc_handleItem;
 	waitUntil {scriptDone _handle};
