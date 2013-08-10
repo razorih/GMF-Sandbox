@@ -1,8 +1,8 @@
 /*
-	@version: 1.5
+	@version: 1.7
 	@file_name: fn_fetchCfgDetails.sqf
 	@file_author: TAW_Tonic
-	@file_edit: 7/25/2013
+	@file_edit: 8/2/2013
 	@file_description: Fetch information about the entities config
 	
 	USAGE:
@@ -14,7 +14,7 @@
 	2: picture
 	3: scope
 	4: type
-	5: itemInfo Type (if any)
+	5: itemInfo Type (if any, -1 means none)
 	6: Cfg Location i.e CfgWeapons
 	7: Magazines
 	8: Muzzles

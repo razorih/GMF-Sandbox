@@ -7,5 +7,5 @@
 */
 private["_data","_handle"];
 _data = (_this select 0) lbData (_this select 1);
-[_data,false,nil,nil,nil] call VAS_fnc_handleItem;
+[_data,false,false,false,false] call VAS_fnc_handleItem;
 [] spawn VAS_fnc_playerDisplay;

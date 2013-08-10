@@ -30,5 +30,7 @@ class VAS
 		class quickItem {};
 		class qRemoveItem {};
 		class mainInit {description = "Main initilization of VAS, called on mission start."; preInit = 1;};
+		class KRON_StrLeft {};
+		class KRON_StrToArray {};
 	};
 };

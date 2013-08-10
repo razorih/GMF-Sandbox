@@ -1,17 +1,19 @@
 /*
-	@version: 1.3
+	@version: 1.7
 	@file_name: fn_handleItem.sqf
 	@file_author: TAW_Tonic
-	@file_edit: 6/22/2013
+	@file_edit: 8/2/2013
 	@file_description: Handles the incoming requests and adds or removes it, returns true if operation done sucessfully or false for failing.
 */
 private["_item","_details","_bool","_ispack","_items","_isgun","_ongun","_override"];
-_item = _this select 0;
-_bool = _this select 1;
-_ispack = if(isNil {_this select 2}) then {false} else {_this select 2};
-_ongun = if(isNil {_this select 3}) then {false} else {_this select 3};
-_override = if(isNil {_this select 4}) then {false} else {_this select 4};
-_gear = str([] call VAS_fnc_fetchPlayerGear);
+_item = [_this,0,"",[""]] call BIS_fnc_param;
+_bool = [_this,1,false,[false]] call BIS_fnc_param;
+_ispack = [_this,2,false,[false]] call BIS_fnc_param;
+_ongun = [_this,3,false,[false]] call BIS_fnc_param;
+_override = [_this,4,false,[false]] call BIS_fnc_param;
+
+//Some checks
+if(_item == "") exitWith {};
 _isgun = false;
 
 _details = [_item] call VAS_fnc_fetchCfgDetails;
@@ -67,7 +69,7 @@ if(_bool) then
 			{
 				if((_details select 4) == 4096) then
 				{
-					if(isNil {(_details select 5)}) then
+					if((_details select 5) == -1) then
 					{
 						_isgun = true;
 					};
@@ -187,7 +189,7 @@ if(_bool) then
 									
 									if(!isNil {_items}) then
 									{
-										{[_x,true,nil,false,true] spawn VAS_fnc_handleItem;} foreach _items;
+										{[_x,true,false,false,true] spawn VAS_fnc_handleItem;} foreach _items;
 									};
 								};
 							};
@@ -223,7 +225,7 @@ if(_bool) then
 									
 									if(!isNil {_items}) then
 									{
-										{[_x,true,nil,false,true] spawn VAS_fnc_handleItem;} foreach _items;
+										{[_x,true,false,false,true] spawn VAS_fnc_handleItem;} foreach _items;
 									};
 								};
 							};
@@ -425,7 +427,7 @@ if(_bool) then
 			{
 				if((_details select 4) == 4096) then
 				{
-					if(isNil {(_details select 5)}) then
+					if((_details select 5) == -1) then
 					{
 						_isgun = true;
 					};
@@ -465,7 +467,7 @@ if(_bool) then
 						clearWeaponCargo (unitBackpack player);
 						if(count _items > 0) then
 						{
-							{[_x,true,true,nil,nil] spawn VAS_fnc_handleItem;} foreach _items;
+							{[_x,true,true,false,false] spawn VAS_fnc_handleItem;} foreach _items;
 						};
 					}
 						else

@@ -7,7 +7,7 @@
 */
 private["_data","_handle"];
 _data = (_this select 0) lbData (_this select 1);
-[_data,true,nil,nil,nil] call VAS_fnc_handleItem;
+[_data,true,false,false,false] call VAS_fnc_handleItem;
 uiNamespace setVariable["VAS_UI_FILTER","mags"];
 uiNamespace setVariable ["VAS_UI_FILTER_VAR",nil];
 [] spawn VAS_fnc_playerDisplay;

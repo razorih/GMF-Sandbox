@@ -1,17 +1,14 @@
 /*
-	@version: 1.4
+	@version: 1.7
 	@file_name: fn_mainInit.sqf
 	@file_author: TAW_Tonic
-	@file_edit: 7/11/2013
+	@file_edit: 8/2/2013
 	@file_description: Only called once during the initialization of VAS and uses compileFinal on all VAS functions.
 */
 [] spawn
 {
 	private["_handle"];
 	VAS_init_complete = false;
-	diag_log "::VAS:: Loading KRON_Strings.sqf";
-	_handle = [] execVM "VAS\KRON_Strings.sqf";
-	waitUntil {scriptDone _handle};
 	diag_log "::VAS:: Loading config.sqf";
 	_handle = [] execVM "VAS\config.sqf";
 	waitUntil {scriptDone _handle;};
