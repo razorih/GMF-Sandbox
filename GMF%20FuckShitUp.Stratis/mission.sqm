@@ -147,7 +147,7 @@ class Mission
 						};
 						class Item5
 						{
-							value="300";
+							value="250";
 							parentCls="Site_OPFOR";
 							typeName="axisB";
 						};
@@ -165,7 +165,7 @@ class Mission
 						};
 						class Item8
 						{
-							value="0.9";
+							value="1";
 							parentCls="Site_OPFOR";
 							typeName="buildingOccupationIndex";
 						};
