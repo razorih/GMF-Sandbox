@@ -511,6 +511,7 @@ class Mission
 				{
 					position[]={4323.291,220.94687,3771.5381};
 					azimut=210;
+					special="NONE";
 					id=22;
 					side="EAST";
 					vehicle="O_MRAP_02_gmg_F";
@@ -520,8 +521,9 @@ class Mission
 				};
 				class Item3
 				{
-					position[]={4275.2388,211.56104,3690.1133};
-					azimut=210;
+					position[]={4274.7007,211.57251,3689.2163};
+					azimut=195;
+					special="NONE";
 					id=23;
 					side="EAST";
 					vehicle="O_MRAP_02_gmg_F";
@@ -530,8 +532,9 @@ class Mission
 				};
 				class Item4
 				{
-					position[]={4276.6646,208.74414,3739.8789};
-					azimut=320;
+					position[]={4278.0996,208.80605,3740.5962};
+					azimut=350;
+					special="NONE";
 					id=24;
 					side="EAST";
 					vehicle="O_MRAP_02_gmg_F";
