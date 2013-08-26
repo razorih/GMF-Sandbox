@@ -33,13 +33,13 @@ class Mission
 		"A3_Boat_F_Boat_Transport_01",
 		"A3_Boat_F_SDV_01",
 		"A3_Characters_F_OPFOR",
-		"A3_Characters_F_Civil",
 		"A3_Structures_F_Mil_Helipads",
 		"A3_Air_F_Beta_Heli_Transport_02",
 		"A3_Structures_F_Civ_Constructions",
 		"A3_armor_f_beta_APC_Tracked_02",
 		"A3_Armor_F_Panther",
-		"a3_modules_f_multiplayer"
+		"a3_modules_f_multiplayer",
+		"A3_Structures_F_Civ_Camping"
 	};
 	addOnsAuto[]=
 	{
@@ -76,6 +76,7 @@ class Mission
 		"a3_weapons_f_beta_ammoboxes",
 		"A3_armor_f_beta_APC_Tracked_02",
 		"A3_Armor_F_Panther",
+		"A3_Structures_F_Civ_Camping",
 		"a3_map_stratis"
 	};
 	randomSeed=16354560;
@@ -820,7 +821,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=204;
+		items=205;
 		class Item0
 		{
 			position[]={2083.8325,5.87854,5725.3818};
@@ -2829,6 +2830,19 @@ class Mission
 			skill=0.60000002;
 			syncId=39;
 			synchronizations[]={0};
+		};
+		class Item204
+		{
+			position[]={1984.8727,5.6999998,5707.6899};
+			azimut=210;
+			special="NONE";
+			id=236;
+			side="EMPTY";
+			vehicle="Land_FirePlace_F";
+			leader=1;
+			skill=0.46666664;
+			text="tardis";
+			init="tard = [this, [4]] execVM ""tardis\loadtardis.sqf""";
 		};
 	};
 	class Markers
