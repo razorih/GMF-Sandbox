@@ -1,0 +1,35 @@
+Respawn = "BASE";       // Players respawn to a marker called RESPAWN_WEST
+RespawnDelay = 15;
+
+author = "razorih";
+onLoadName = "GMF FuckShitUp";
+OnLoadMission = "America is dominate. I'm crying tears."; // Message displayed on mission load
+OnLoadIntroTime = 0;        // We don't want to see the time and date on the intro load 
+OnLoadMissionTime = 0;      // Nor on the mission load
+loadScreen = "america.paa"; // Image displayed on mission load
+
+showGPS = 1;     // Allow players to use GPS,
+showCompass = 1; // Compass,
+showMap = 1;     // Map,
+showWatch = 1;   // And watch.
+
+disabledAI = 1;  // Automatically disables AI in multiplayer lobby
+
+class Header
+{
+    gameType = Coop; // Mission type, shown on mission load.
+    minPlayers = 1;
+    maxPlayers = 14; // At the moment, mission only has 14 player slots.
+};
+
+#include "VAS\menu.hpp" // Include Virtual Ammobox menu
+
+class CfgFunctions
+{
+    #include "VAS\cfgfunctions.hpp" // Include Virtual Ammobox System functions.
+};
+
+class Params
+{
+    #include "params.hpp" // Include mission parameters
+};

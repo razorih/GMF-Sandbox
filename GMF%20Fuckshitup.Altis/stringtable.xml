@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="Virtual Ammobox System">
+	<Package name="Main">
+		<Key ID="STR_VAS_Main_Weapons">
+			<Original>Weapons</Original>
+			<German>Waffen</German>
+			<French>Armes</French> 
+			<Polish>Broń</Polish>
+			<Finnish>Aseet</Finnish>
+		</Key>
+		<Key ID="STR_VAS_Main_Magazines">
+			<Original>Magazines</Original>
+			<German>Magazine</German>
+			<French>Chargeurs</French>
+			<Polish>Amunicja</Polish>
+			<Finnish>Lippaat</Finnish>
+		</Key>
+		<Key ID="STR_VAS_Main_Items">
+			<Original>Items</Original>
+			<German>Gegenstände</German>
+			<French>Objets</French>
+			<Polish>Przedmioty</Polish>
+			<Finnish>Esineet</Finnish>
+		</Key>
+		<Key ID="STR_VAS_Main_Backpacks">
+			<Original>Backpacks</Original>
+			<German>Rucksäcke</German>
+			<French>Sacs à dos</French>
+			<Polish>Plecaki</Polish>
+			<Finnish>Selkäreput</Finnish>
+		</Key>
+		<Key ID="STR_VAS_Main_Goggles">
+			<Original>Goggles</Original>
+			<German>Brillen</German>
+			<French>Lunettes</French>
+			<Polish>Gogle</Polish>
+			<Finnish>Lasit</Finnish>
+		</Key>
+		<Key ID="STR_VAS_Main_Uniforms">
+			<Original>Uniforms</Original>
+			<German>Uniformen</German>
+			<French>Uniformes</French>
+			<Polish>Mundury</Polish>
+			<Finnish>Univormut</Finnish>
+		</Key>
+		<Key ID="STR_VAS_Main_Vests">
+			<Original>Vests</Original>
+			<German>Vesten</German>
+			<French>Gilets Tac.</French>
+			<Polish>Kamizelki</Polish>
+			<Finnish>Liivit</Finnish>
+		</Key>
+		<Key ID="STR_VAS_Main_Headgear">
+			<Original>Headgear</Original>
+			<German>Kopfbekleidung</German>
+			<French>Casques</French>
+			<Polish>Nakrycia głowy</Polish>
+			<Finnish>Päähineet</Finnish>
+		</Key>
+		<Key ID="STR_VAS_Main_Attachments">
+			<Original>Attachments</Original>
+			<German>Befestigungsgegenstände</German>
+			<French>Objets Attachés</French>
+			<Polish>Dodatki</Polish>
+			<Finnish>Liitännäiset</Finnish>
+		</Key>
+		<Key ID="STR_VAS_Main_Misc">
+			<Original>Misc</Original>
+			<German>Diverses</German>
+			<French>Objets Divers</French>
+			<Polish>Inne</Polish>
+			<Finnish>Muut</Finnish>
+		</Key>
+		<Key ID="STR_VAS_Main_btnAdd">
+			<Original>Add Item</Original>
+			<German>Gegenstand hinzufügen</German>
+			<French>Ajouter Arme/Obj.</French>
+			<Polish>Dodaj przedmiot</Polish>
+			<Finnish>Lisää esine</Finnish>
+		</Key>
+		<Key ID="STR_VAS_Main_btnRemove">
+			<Original>Remove Item</Original>
+			<German>Gegenstand entfernen</German>
+			<French>Retirer Arme/Obj.</French>
+			<Polish>Usuń przedmiot</Polish>
+			<Finnish>Poista esine</Finnish>
+		</Key>
+		<Key ID="STR_VAS_Main_btnClose">
+			<Original>Close</Original>
+			<German>schließen</German>
+			<French>Fermer</French>
+			<Polish>Zamknij</Polish>
+			<Finnish>Sulje</Finnish>
+		</Key>
+		<Key ID="STR_VAS_Main_btnLoad">
+			<Original>Load Gear</Original>
+			<German>Ausrüstung laden</German>
+			<French>Charger</French>
+			<Polish>Załaduj wyposażenie</Polish>
+			<Finnish>Lataa varusteet</Finnish>
+		</Key>
+		<Key ID="STR_VAS_Main_btnSave">
+			<Original>Save Gear</Original>
+			<German>Ausrüstung speichern</German>
+			<French>Sauver</French>
+			<Polish>Zapisz wyposażenie</Polish>
+			<Finnish>Tallenna varusteet</Finnish>
+		</Key>
+		<Key ID="STR_VAS_Main_btnRemoveAll">
+			<Original>Remove All</Original>
+			<German>alles entfernen</German>
+			<French>Retir.Tout</French>
+			<Polish>Usuń wszystko</Polish>
+			<Finnish>Poista kaikki</Finnish>
+		</Key>
+		<Key ID="STR_VAS_Main_VirtGear">
+			<Original>Virtual Ammobox</Original>
+		</Key>
+		<Key ID="STR_VAS_Main_YCG">
+			<Original>Your Current Gear</Original>
+			<German>Ihre momentane Ausrüstung</German>
+			<French>Votre équipement actuel</French>
+			<Polish>Twoje Aktualne Wyposażenie</Polish>
+			<Finnish>Nykyiset varusteesi</Finnish>
+		</Key>
+		<Key ID="STR_Vas_Main_CL">
+			<Original>Custom Loadout</Original>
+			<German>Angepasste Ausrüstung</German>
+			<French>Emplacement perso</French>
+			<Polish>Niestandardowe wyposażenie</Polish>
+			<Finnish>Mukautettu varustus</Finnish>
+		</Key>
+		<Key ID="STR_Vas_Main_Rifles">
+			<Original>Rifles</Original>
+			<German>Gewehre</German>
+			<French>Fusils (Tous)</French>
+			<Polish>Karabiny</Polish>
+			<Finnish>Kiväärit</Finnish>
+		</Key>
+		<Key ID="STR_Vas_Main_Scoped">
+			<Original>Scoped</Original>
+			<French>Fusils (Longs)</French>
+			<Polish>Bron Ciężka</Polish>
+			<Finnish>Kiväärit (Kiikarilliset)</Finnish>
+		</Key>
+		<Key ID="STR_Vas_Main_Heavy">
+			<Original>Heavy</Original>
+			<German>Schwere Waffen</German>
+			<French>Lourds</French>
+			<Polish>Wyrzutnie</Polish>
+			<Finnish>Raskaat</Finnish>
+		</Key>
+		<Key ID="STR_Vas_Main_Launcher">
+			<Original>Launcher</Original>
+			<German>Raketenwerfer</German>
+			<French>Lanceurs</French>
+			<Finnish>Raketinheittimet</Finnish>
+		</Key>
+		<Key ID="STR_Vas_Main_Pistols">
+			<Original>Pistols</Original>
+			<German>Pistolen</German>
+			<French>Pistolets</French>
+			<Polish>Pistolety</Polish>
+			<Finnish>Pistoolit</Finnish>
+		</Key>
+	</Package>
+	<Package name="LoadGear">
+		<Key ID="STR_VAS_Load_Title">
+				<Original>Virtual Ammobox System - Load Gear</Original>
+				<German>Virtual Ammobox System - Ausrüstung Laden</German>
+				<French>Caisse Virtuelle - Charger</French>
+				<Finnish>Virtual Ammobox System - Lataa varusteet</Finnish>
+			</Key>
+		<Key ID="STR_VAS_Load_LOR">
+			<Original>Load On Respawn</Original>
+			<German>Beim Respawn laden</German>
+			<French>Charg. à la réap</French>
+			<Polish>Załaduj przy respawnie</Polish>
+			<Finnish>Lataa respawnissa</Finnish>
+		</Key>
+		<Key ID="STR_VAS_Load_btnLoad">
+			<Original>Load</Original>
+			<German>Laden</German>
+			<French>Charger</French>
+			<Polish>Załaduj</Polish>
+			<Finnish>Lataa</Finnish>
+		</Key>
+		<Key ID="STR_VAS_Load_btnDelete">
+			<Original>Delete</Original>
+			<German>Löschen</German>
+			<French>Supprimer</French>
+			<Polish>Usuń</Polish>
+			<Finnish>Poista</Finnish>
+		</Key>
+	</Package>
+	<Package name="SaveGear">
+		<Key ID="STR_VAS_Save_Title">
+				<Original>Virtual Ammobox System - Save Gear</Original>
+				<German>Virtual Ammobox System - Ausrüstung Speichern</German>
+				<French>Caisse Virtuelle - Sauver</French>
+				<Finnish>Virtual Ammobox System - Tallenna varusteet</Finnish>
+			</Key>
+		<Key ID="STR_VAS_Save_btnSave">
+			<Original>Save</Original>
+			<German>Speichern</German>
+			<French>Sauver</French>
+			<Polish>Zapisz</Polish>
+			<Finnish>Tallenna</Finnish>
+		</Key>
+		<Key ID="STR_VAS_Save_CLN">
+			<Original>Custom Loadout Name</Original>
+			<German>Angepasste Ausrüstung</German>
+			<French>Nom de l'emplacement perso</French>
+			<Finnish>Mukautettu varustus</Finnish>
+		</Key>
+	</Package>
+</Project>
