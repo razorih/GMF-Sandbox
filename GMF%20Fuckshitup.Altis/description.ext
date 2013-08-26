@@ -1,4 +1,4 @@
-Respawn = 3;       // Players respawn to a marker called RESPAWN_WEST
+Respawn = "BASE";       // Players respawn to a marker called RESPAWN_WEST
 RespawnDelay = 15;
 
 author = "razorih";
@@ -12,6 +12,8 @@ showGPS = 1;     // Allow players to use GPS,
 showCompass = 1; // Compass,
 showMap = 1;     // Map,
 showWatch = 1;   // And watch.
+
+disabledAI = 1;  // Automatically disables AI in multiplayer lobby
 
 class Header
 {
